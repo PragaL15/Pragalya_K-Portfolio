@@ -2,7 +2,7 @@
   "name": "technical_portfolio",
   "version": "0.0.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://PragaL15.github.io/Pragalya_K-Portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
