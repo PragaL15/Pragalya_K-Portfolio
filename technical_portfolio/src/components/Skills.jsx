@@ -15,8 +15,7 @@ const Skills = () => (
   <section id="skills">
     <div className="skills container">
       <div className="skills-top">
-        <h1 className="section-title">Sk<span>i</span>lls</h1>
-        <p>From last few years, I have put much effort into learning and improving my skills. Here are some of them!</p>
+        <h1 className="section-title">Skills</h1>
       </div>
       <div className="skills-bottom">
         {['C', 'HTML', 'CSS', 'Java', 'PostgreSQL', 'React', 'Tailwind.css', 'Linux', 'Javascript','GitHub','Git'].map(skill => (

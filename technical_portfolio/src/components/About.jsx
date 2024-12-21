@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import React from "react";
 import "../App.css";
+
 const About = () => (
   <section id="about">
     <div className="about container">
       <div className="col-left">
         <div className="about-img">
-          <img src="../../public/profile.png" alt="profile photo" />
+          <img 
+            src="https://raw.githubusercontent.com/PragaL15/Pragalya_K-Portfolio/technical_portfolio/public/profile.png" 
+            alt="Profile Photo" 
+          />
         </div>
       </div>
       <div className="col-right">
@@ -18,4 +21,5 @@ const About = () => (
     </div>
   </section>
 );
-export default About
+
+export default About;

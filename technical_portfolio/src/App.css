@@ -153,7 +153,6 @@ p{
     left: 0;
 }
 
-
 #header .nav-list ul a{
     font-size: 2.5rem;
     font-weight: 500;
@@ -183,10 +182,14 @@ p{
 #header .nav-list ul li:hover a::after{
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
+    
 }
 
 
 #header .nav-list ul li:hover a{
+    color: crimson;
+}
+#header .nav-list ul li a:active {
     color: crimson;
 }
 
@@ -270,6 +273,8 @@ p{
     background-position: top center;
     position: relative;
     z-index: 1;
+    width: 100vw;
+
 }
 
 
@@ -278,6 +283,7 @@ p{
     position: absolute;
     left: 0;
     top: 0;
+    margin-right: 0%;
     height: 100%;
     width: 100%;
     background-color: black;
@@ -287,7 +293,7 @@ p{
 
 
 #hero .hero{
-    max-width: 1200px;
+    max-width: 2400px;
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
@@ -354,9 +360,8 @@ p{
 #about .about{
     flex-direction: column-reverse;
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
+    padding: 10px;
+    width: 100vw;
 }
 
 
@@ -367,7 +372,7 @@ p{
 
 
 #about .col-right{
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -518,9 +523,9 @@ p{
 
 #projects .projects{
     flex-direction: column;
-    max-width: 1200px;
+    width: 100vw;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 
@@ -674,20 +679,22 @@ p{
 /* Footer */
 
 #footer{
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #9ea3a8 0%, #ccddef 100%);
 }
 
 
 #footer .footer{
-    min-height: 200px;
+    min-height: 170px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
+    
 }
 
 
 #footer h1{
     margin-bottom: 40px;
+    color: #000;
 }
 
 
@@ -717,10 +724,11 @@ p{
 
 
 #footer p{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.3rem;
     align-items: center;
     text-align: center;
+    font-weight: 400;
 }
 
 /* End Footer */
@@ -922,6 +930,7 @@ p{
 
     #header .nav-list ul a::after{
         display: none;
+    
     }
 
     /* End Header */

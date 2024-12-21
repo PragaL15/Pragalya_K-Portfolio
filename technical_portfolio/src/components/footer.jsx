@@ -1,17 +1,16 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import React from "react";
 import "../App.css";
 const Footer = () => (
   <section id="footer">
     <div className="footer container">
       <div className="brand">
-        <h1><span>P</span>rogram <span>W</span>arehouse</h1>
+        <h1>Pragalya Kanakaraj</h1>
       </div>
       <div className="social-icon">
         {[
-          { href: 'https://www.instagram.com/programwarehouse', icon: 'instagram' },
-          { href: 'https://github.com/program-warehouse', icon: 'github' },
-          { href: 'https://www.linkedin.com/company/program-warehouse', icon: 'linkedin' },
+          { href: 'https://www.instagram.com/pragalyakanakaraj/', icon: 'instagram' },
+          { href: 'https://github.com/PragaL15', icon: 'github' },
+          { href: 'https://www.linkedin.com/in/pragalya-kanakaraj/', icon: 'linkedin' },
         ].map((social, index) => (
           <div className="social-item" key={index}>
             <a href={social.href}>
@@ -20,7 +19,7 @@ const Footer = () => (
           </div>
         ))}
       </div>
-      <p>Copyright Ⓒ 2020 Program Warehouse. All Rights Reserved.</p>
+      <p>Copyright Ⓒ 2020 Pragalya Kanakaraj. All Rights Reserved.</p>
     </div>
   </section>
 );
