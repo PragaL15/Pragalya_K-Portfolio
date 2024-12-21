@@ -11,6 +11,7 @@ import Cicon from '../assets/C.svg';
 import POSTGRESSQLicon from '../assets/Postgresql.svg';
 import GITHUBicon from '../assets/GitHub.svg';
 import GITicon from '../assets/Git.svg';
+import GOicon from '../assets/golang.svg'
 
 const skillIcons = {
   HTML: HTMLIcon,
@@ -18,12 +19,13 @@ const skillIcons = {
   C: Cicon,
   React: REACTicon,
   Java: JAVAicon,
-  'Tailwind.css': Tailwindicon,
+  Tailwindcss: Tailwindicon,
   Linux: LINUXicon,
   Javascript: JAVASCRIPTicon,
   PostgreSQL: POSTGRESSQLicon,
   GitHub: GITHUBicon,
   Git: GITicon,
+  Go:GOicon,
 };
 
 const Skills = () => (
@@ -33,7 +35,7 @@ const Skills = () => (
         <h1 className="section-title">Skills</h1>
       </div>
       <div className="skills-bottom">
-        {['C', 'HTML', 'CSS', 'Java', 'PostgreSQL', 'React', 'Tailwind.css', 'Linux', 'Javascript', 'GitHub', 'Git'].map(skill => (
+        {['C', 'HTML', 'CSS', 'Java', 'PostgreSQL', 'React', 'Tailwindcss', 'Linux', 'Javascript', 'GitHub', 'Git','Go'].map(skill => (
           <div className={`skills-items ${skill.toLowerCase()}`} key={skill}>
             <div className="icon">
               <img src={skillIcons[skill]} alt={`${skill} Icon`} width="60" height="60" />

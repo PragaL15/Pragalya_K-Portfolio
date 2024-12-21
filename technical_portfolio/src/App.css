@@ -417,157 +417,170 @@ p{
 
 /* End About Section */
 
-/* Skills Section */
-/* Skills Section */
 #skills .skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding-bottom: 100px;
-}
-
-#skills .skills-top {
-  max-width: 500px;
-  margin: 0 auto;
-  color: white;
-}
-
-#skills .skills-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  gap: 50px;
-}
-
-#skills .skills-items {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 200px;
-  width: 200px;
-  /* background: #060c21; */
-  /* border-radius: 60%; */
-  padding: 20px;
-  border: 5px solid transparent; /* Border initially transparent */
-  background-clip: padding-box;
-  transition: transform 0.3s ease;
-  z-index: 1;
-}
-
-/* Glowing Border Effect */
-#skills .skills-items::before {
-  content: "";
-  position: absolute;
-  inset: -5px;
-  border-radius: 2%;
-  z-index: -1;
-  background: conic-gradient(from var(--angle), #0c63e7, #14d611, #d11149, #e9fd31, #0c63e7);
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#a54141 0 0);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-  padding: 4.5px;
-}
-
-#skills .skills-items:nth-child(2)::before {
-  background: conic-gradient(from var(--angle), #f35807, #022ab9, #36d709, #22e232, #f35807);
-}
-
-#skills .skills-items:nth-child(3)::before {
-  background: conic-gradient(from var(--angle),  #0c63e7, #14d611, #d11149, #e9fd31, #0c63e7);
-} 
-
-
-.skills-items.c {
-    border-bottom-color: #61dafb; 
-    border-top-color: #14d611;
-    border-right-color: #2965f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100vw;
+    padding-bottom: 90px;
   }
   
-  .skills-items.html {
-    border: 2px solid #e44d26; /* Border for HTML */
+  #skills .skills-top {
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
   }
   
-  .skills-items.css {
-    border: 2px solid #2965f1; /* Border for CSS */
+  #skills .skills-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 50px;
   }
   
-  .skills-items.react {
-    border: 2px solid #61dafb; /* Border for React */
+  #skills .skills-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width: 50px;
+    margin: 1.5rem;
+    border-radius: 9%;
+   
+    overflow: hidden;
+    padding: 70px;
+    border: 5px solid transparent; 
+  }
+
+   #skills .skills-items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 8px solid transparent; 
+    z-index: -1;
+    animation: progressBar 5s linear infinite;
   }
   
-  .skills-items.java {
-    border: 2px solid #f8981d; /* Border for Java */
+  @keyframes progressBar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-  .skills-items.tailwind.css {
-    border: 2px solid #f8981d; /* Border for Java */
-  }
-  .skills-items.linux {
-    border: 2px solid #f8981d; /* Border for Java */
-  }
-  .skills-items.javascript {
-    border: 2px solid #f8981d; /* Border for Java */
-  }
-  .skills-items.postgresql {
-    border: 2px solid #f8981d; /* Border for Java */
-  }
-  .skills-items.git {
-    border: 2px solid #f8981d; /* Border for Java */
-  }
-  .skills-items.github {
-    border: 2px solid #f8981d; /* Border for Java */
-  }
-  
- 
-  
 
-
-
-
-
-
+/* Hover Effects for All items */
 #skills .skills-items:hover {
-  transform: scale(1.1);
-  /*background: conic-gradient(from var(--angle), #dfff00, #da2f18, #08a845);*/
+    transform: scale(1.1);
 }
 
-/* Icon Styling */
-#skills .skills-bottom .icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 20px;
-  z-index: 1;
+/* Hover Effects for Each Individual Item */
+#skills .skills-items.c:hover {
+    box-shadow: 3px 3px 5px 5px rgba(136, 132, 249, 0.5); /* Bottom and right shadow */
 }
 
-/* Skill Title */
-#skills .skills-items h1 {
-  font-size: 1.5rem;
-  color: #ddd;
-  margin-top: 10px;
-  text-transform: uppercase;
-  text-align: center;
+#skills .skills-items.html:hover {
+    box-shadow: 3px 3px 7px 2px rgba(235, 57, 8, 0.5);
 }
 
-/* Animations */
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 53deg;
-  inherits: false;
+#skills .skills-items.css:hover {
+    box-shadow: 3px 3px 7px 2px rgba(14, 234, 234, 0.5);
 }
 
-@keyframes glowing-border {
-  from {
-      --angle: 53deg;
+#skills .skills-items.java:hover {
+    box-shadow: 3px 3px 7px 2px rgba(230, 9, 131, 0.5);
+}
+
+#skills .skills-items.postgresql:hover {
+    box-shadow: 3px 3px 7px 2px rgba(151, 151, 150, 0.5);
+}
+
+#skills .skills-items.react:hover {
+    box-shadow: 3px 3px 7px 2px rgba(104, 149, 247, 0.5);
+}
+
+#skills .skills-items.tailwindcss:hover {
+    box-shadow: 3px 3px 7px 2px rgba(67, 138, 53, 0.5);
+}
+
+#skills .skills-items.linux:hover {
+    box-shadow: 3px 3px 7px 2px rgba(137, 135, 74, 0.5);
+}
+
+#skills .skills-items.javascript:hover {
+    box-shadow: 3px 3px 7px 2px rgba(230, 223, 9, 0.5);
+}
+
+#skills .skills-items.github:hover {
+    box-shadow: 3px 3px 7px 2px rgba(142, 141, 138, 0.5);
+}
+
+#skills .skills-items.git:hover {
+    box-shadow: 3px 3px 7px 2px rgba(234, 85, 85, 0.5);
+}
+
+#skills .skills-items.go:hover {
+    box-shadow: 3px 3px 7px 2px rgba(82, 144, 155, 0.5);
+}
+
+
+  #skills .skills-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 4px;
+    z-index: 1;
   }
-}
-
+  
+  /* Skill Title */
+  #skills .skills-items h1 {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  /* Adjusting responsiveness */
+  @media (max-width: 768px) {
+    #skills .skills-items {
+      height: 150px;
+      width: 150px;
+    }
+  
+    #skills .skills-bottom {
+      gap: 30px;
+    }
+  
+    #skills .skills-items h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 53deg;
+    inherits: false;
+    animation: glowing-border 5s linear infinite;
+  }
+  
+  @keyframes glowing-border {
+    from {
+      --angle: 53deg;
+    }
+  }
+  
 
 
 /* Projects Section */
