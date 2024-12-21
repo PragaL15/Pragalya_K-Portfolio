@@ -198,8 +198,6 @@ p{
 #header .nav-list ul li a:active {
     color: crimson;
 }
-
-
 #header .hamburger{
     height: 60px;
     width: 60px;
@@ -216,7 +214,6 @@ p{
     margin-right: 20px;
 }
 
-
 #header .hamburger::after{
     position: absolute;
     content: '';
@@ -227,7 +224,6 @@ p{
     animation: hamburger_pulse 1.3s ease infinite;
 }
 
-
 #header .hamburger .bar{
     height: 2px;
     width: 30px;
@@ -235,7 +231,6 @@ p{
     background-color: white;
     z-index: -1;
 }
-
 
 #header .hamburger .bar::after, #header .hamburger .bar::before{
     content: '';
@@ -253,21 +248,17 @@ p{
     top: 8px;
 }
 
-
 #header .hamburger .bar::before{
     bottom: 8px;
 }
-
 
 #header .hamburger.active .bar::before{
     bottom: 0;
 }
 
-
 #header .hamburger.active .bar::after{
     top: 0;
 }
-
 
 /* End Header Section */
 
@@ -283,7 +274,6 @@ p{
 
 }
 
-
 #hero::after{
     content: '';
     position: absolute;
@@ -297,14 +287,12 @@ p{
     z-index: -1;
 }
 
-
 #hero .hero{
     max-width: 2400px;
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
 }
-
 
 #hero h1{
     display: block;
@@ -315,7 +303,6 @@ p{
     animation: text_reveal 0.5s ease forwards;
     animation-delay: 1s;
 }
-
 
 #hero h1:nth-child(1){
     animation-delay: 1s;
