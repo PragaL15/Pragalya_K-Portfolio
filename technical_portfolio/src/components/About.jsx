@@ -1,21 +1,22 @@
 import React from "react";
 import "../App.css";
-import profileImage from '../assets/profile.png';
+import profileImage from "../assets/profile.png";
 const About = () => (
   <section id="about">
     <div className="about container">
       <div className="col-left">
         <div className="about-img">
-        <img 
-  src={profileImage} 
-  alt="Profile Photo" 
-/>
+          <img src={profileImage} alt="Profile Photo" />
         </div>
       </div>
       <div className="col-right">
-        <h1 className="section-title">About <span>Me</span></h1>
+        <h1 className="section-title">
+          About <span>Me</span>
+        </h1>
         <h2>Hello! I'm Pragalya Kanakaraj</h2>
-        <a href="#contact" className="cta">Contact Me</a>
+        <a href="#contact" className="cta">
+          Contact Me
+        </a>
       </div>
     </div>
   </section>
