@@ -72,8 +72,8 @@ p{
   display: inline-block;
   color: crimson;
   background-color: transparent;
-  border: 1px solid crimson; /* Reduced border thickness */
-  font-size: 1.5rem; /* Reduced font size */
+  border: 1px solid crimson;
+  font-size: 1.5rem; 
   text-transform: uppercase;
   letter-spacing: 0.05rem; /* Adjusted letter spacing for smaller text */
   margin-top: 45px; /* Reduced margin for smaller spacing */
