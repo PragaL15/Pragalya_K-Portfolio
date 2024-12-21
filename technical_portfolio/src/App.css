@@ -50,8 +50,9 @@ p{
 .section-title{
     font-size: 4rem;
     font-weight: 300;
-    color: black;
+    color: rgb(146, 145, 145);
     margin-bottom: 10px;
+    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
@@ -68,12 +69,13 @@ p{
   color: crimson;
   background-color: transparent;
   border: 1px solid crimson; /* Reduced border thickness */
-  font-size: 1rem; /* Reduced font size */
+  font-size: 1.5rem; /* Reduced font size */
   text-transform: uppercase;
   letter-spacing: 0.05rem; /* Adjusted letter spacing for smaller text */
   margin-top: 45px; /* Reduced margin for smaller spacing */
   transition: 0.3s ease all;
   transition-property: background-color, color;
+  padding: 20px 30px;
 }
 
 
@@ -464,14 +466,14 @@ p{
   content: "";
   position: absolute;
   inset: -5px;
-  border-radius: 55%;
+  border-radius: 2%;
   z-index: -1;
   background: conic-gradient(from var(--angle), #0c63e7, #14d611, #d11149, #e9fd31, #0c63e7);
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#a54141 0 0);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
-  padding: 1.5px;
+  padding: 4.5px;
 }
 
 #skills .skills-items:nth-child(2)::before {
@@ -480,7 +482,56 @@ p{
 
 #skills .skills-items:nth-child(3)::before {
   background: conic-gradient(from var(--angle),  #0c63e7, #14d611, #d11149, #e9fd31, #0c63e7);
-}
+} 
+
+
+.skills-items.c {
+    border-bottom-color: #61dafb; 
+    border-top-color: #14d611;
+    border-right-color: #2965f1;
+  }
+  
+  .skills-items.html {
+    border: 2px solid #e44d26; /* Border for HTML */
+  }
+  
+  .skills-items.css {
+    border: 2px solid #2965f1; /* Border for CSS */
+  }
+  
+  .skills-items.react {
+    border: 2px solid #61dafb; /* Border for React */
+  }
+  
+  .skills-items.java {
+    border: 2px solid #f8981d; /* Border for Java */
+  }
+  .skills-items.tailwind.css {
+    border: 2px solid #f8981d; /* Border for Java */
+  }
+  .skills-items.linux {
+    border: 2px solid #f8981d; /* Border for Java */
+  }
+  .skills-items.javascript {
+    border: 2px solid #f8981d; /* Border for Java */
+  }
+  .skills-items.postgresql {
+    border: 2px solid #f8981d; /* Border for Java */
+  }
+  .skills-items.git {
+    border: 2px solid #f8981d; /* Border for Java */
+  }
+  .skills-items.github {
+    border: 2px solid #f8981d; /* Border for Java */
+  }
+  
+ 
+  
+
+
+
+
+
 
 #skills .skills-items:hover {
   transform: scale(1.1);
@@ -622,19 +673,16 @@ p{
 
 #contact .contact{
     flex-direction: column;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     margin-bottom: 50px;
+    margin-top: 20px;
+    width: 100vw;
 }
-
-
-#contact .contact-items{
-    width: 300px;
-}
-
 
 #contact .contact-item{
     width: 80%;
+    height: 10%;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -644,13 +692,16 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 18px 0px #0000002c;
+    background-color: #2f353b;
     transition: 0.3s ease box-shadow;
 }
 
+#contact .add info{
+    height: 90%;
+}
 
 #contact .contact-item:hover{
-    box-shadow: 0px 0px 5px 0px #0000002c;
+    box-shadow: 0px 0px 18px 0px #ee5f5fe6;
 }
 
 

@@ -1,16 +1,31 @@
 import React from "react";
 import "../App.css";
 import HTMLIcon from '../assets/HTML.svg';
-import CSSicon from '../assets/CSS.svg'
-import JAVAicon from '../assets/JAVA.svg'
-import REACTicon from '../assets/React1.svg'
-import LINUXicon from '../assets/LINUX.svg'
-import Tailwindicon from '../assets/Tailwindcss.svg'
-import JAVASCRIPTicon from '../assets/JS.svg'
-import Cicon from '../assets/C.svg'
-import POSTGRESSQLicon from '../assets/Postgresql.svg'
-import GITHUBicon from '../assets/GitHub.svg'
-import GITicon from '../assets/Git.svg'
+import CSSicon from '../assets/CSS.svg';
+import JAVAicon from '../assets/JAVA.svg';
+import REACTicon from '../assets/React1.svg';
+import LINUXicon from '../assets/LINUX.svg';
+import Tailwindicon from '../assets/Tailwindcss.svg';
+import JAVASCRIPTicon from '../assets/JS.svg';
+import Cicon from '../assets/C.svg';
+import POSTGRESSQLicon from '../assets/Postgresql.svg';
+import GITHUBicon from '../assets/GitHub.svg';
+import GITicon from '../assets/Git.svg';
+
+const skillIcons = {
+  HTML: HTMLIcon,
+  CSS: CSSicon,
+  C: Cicon,
+  React: REACTicon,
+  Java: JAVAicon,
+  'Tailwind.css': Tailwindicon,
+  Linux: LINUXicon,
+  Javascript: JAVASCRIPTicon,
+  PostgreSQL: POSTGRESSQLicon,
+  GitHub: GITHUBicon,
+  Git: GITicon,
+};
+
 const Skills = () => (
   <section id="skills">
     <div className="skills container">
@@ -18,42 +33,10 @@ const Skills = () => (
         <h1 className="section-title">Skills</h1>
       </div>
       <div className="skills-bottom">
-        {['C', 'HTML', 'CSS', 'Java', 'PostgreSQL', 'React', 'Tailwind.css', 'Linux', 'Javascript','GitHub','Git'].map(skill => (
-          <div className="skills-items" key={skill}>
+        {['C', 'HTML', 'CSS', 'Java', 'PostgreSQL', 'React', 'Tailwind.css', 'Linux', 'Javascript', 'GitHub', 'Git'].map(skill => (
+          <div className={`skills-items ${skill.toLowerCase()}`} key={skill}>
             <div className="icon">
-              {skill === 'HTML' && (
-                <img src={HTMLIcon} alt="HTML Icon" width="60" height="60" />
-              )}
-              {skill === 'CSS' && (
-                <img src={CSSicon} alt="CSS Icon" width="60" height="60" />
-              )}
-              {skill === 'C' && (
-                <img src={Cicon} alt="C Icon" width="60" height="60" />
-              )}
-              {skill === 'React' && (
-                <img src={REACTicon} alt="React Icon" width="60" height="60" />
-              )}
-              {skill === 'Java' && (
-                <img src={JAVAicon} alt="JAVA Icon" width="60" height="60" />
-              )}
-              {skill === 'Tailwind.css' && (
-                <img src={Tailwindicon} alt="Tailwind Icon" width="60" height="60" />
-              )}
-              {skill === 'Linux' && (
-                <img src={LINUXicon} alt="LINUX Icon" width="60" height="60" />
-              )}
-              {skill === 'Javascript' && (
-                <img src={JAVASCRIPTicon} alt="JS Icon" width="60" height="60" />
-              )}
-              {skill === 'PostgreSQL' && (
-                <img src={POSTGRESSQLicon} alt="PSQL Icon" width="60" height="60" />
-              )}
-              {skill === 'GitHub' && (
-                <img src={GITHUBicon} alt="GitHub Icon" width="60" height="60" />
-              )}
-              {skill === 'Git' && (
-                <img src={GITicon} alt="PSQL Icon" width="60" height="60" />
-              )}
+              <img src={skillIcons[skill]} alt={`${skill} Icon`} width="60" height="60" />
             </div>
             <h1>{skill}</h1>
           </div>

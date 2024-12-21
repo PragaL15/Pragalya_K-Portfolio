@@ -1,15 +1,15 @@
 import React from "react";
 import "../App.css";
-
+import profileImage from '../assets/profile.png';
 const About = () => (
   <section id="about">
     <div className="about container">
       <div className="col-left">
         <div className="about-img">
-          <img 
-            src="https://raw.githubusercontent.com/PragaL15/Pragalya_K-Portfolio/technical_portfolio/public/profile.png" 
-            alt="Profile Photo" 
-          />
+        <img 
+  src={profileImage} 
+  alt="Profile Photo" 
+/>
         </div>
       </div>
       <div className="col-right">
