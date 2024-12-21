@@ -62,7 +62,11 @@ p{
 .section-title span{
     color: crimson;
 }
-
+.section-title{
+    color: #ccddef;
+    font-size: 18px;
+    margin-bottom: 120px;
+}
 
 .cta {
   display: inline-block;
@@ -481,12 +485,11 @@ p{
     }
   }
 
-/* Hover Effects for All items */
+
 #skills .skills-items:hover {
     transform: scale(1.1);
 }
 
-/* Hover Effects for Each Individual Item */
 #skills .skills-items.c:hover {
     box-shadow: 3px 3px 5px 5px rgba(136, 132, 249, 0.5); /* Bottom and right shadow */
 }
@@ -848,6 +851,7 @@ p{
 
     h1.section-title{
         font-size: 6rem;
+        color: #ccddef;
     }
 
     /* Hero Section */
