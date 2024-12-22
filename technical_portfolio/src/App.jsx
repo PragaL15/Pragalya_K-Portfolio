@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Header from "./components/Navbar"
-import Hero from "./components/BodyComponent"
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import Header from "./components/Navbar";
+import Hero from "./components/BodyComponent";
 import About from "./components/About";
-import Skills from "./components/Skills"
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
 import Footer from "./components/footer";
-import "./App.css"
+import "./App.css";
+
 const App = () => {
   useEffect(() => {
     const hamburger = document.querySelector(".header .nav-bar .nav-list .hamburger");
@@ -39,29 +40,14 @@ const App = () => {
       });
     };
   }, []);
-  <div>
-  <Header/>
-  <Hero/>
-  <About/>
-  <Skills/>
-  <Projects/>
-  <Contact/>
-{/* <Footer/> */}
-  </div>
-
-
-
-
-
-
-  
-
 
   return (
-    <Router>
+    <Router basename="/Pragalya_K-Portfolio">
       <Header />
       <Routes>
-        <Route path="/" element={<Hero />} />
+        {/* Default redirection from "/" to "/home" */}
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
