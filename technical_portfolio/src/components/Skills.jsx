@@ -34,6 +34,7 @@ const Skills = () => (
       <div className="skills-top">
         <h1 className="section-title">Skills</h1>
       </div>
+      
       <div className="skills-bottom">
         {['C', 'HTML', 'CSS', 'Java', 'PostgreSQL', 'React', 'Tailwindcss', 'Linux', 'Javascript', 'GitHub', 'Git','Go'].map(skill => (
           <div className={`skills-items ${skill.toLowerCase()}`} key={skill}>
