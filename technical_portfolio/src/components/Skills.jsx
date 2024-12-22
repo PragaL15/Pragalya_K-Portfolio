@@ -12,7 +12,6 @@ import POSTGRESSQLicon from '../assets/Postgresql.svg';
 import GITHUBicon from '../assets/GitHub.svg';
 import GITicon from '../assets/Git.svg';
 import GOicon from '../assets/golang.svg'
-
 const skillIcons = {
   HTML: HTMLIcon,
   CSS: CSSicon,
@@ -34,7 +33,6 @@ const Skills = () => (
       <div className="skills-top">
         <h1 className="section-title">Skills</h1>
       </div>
-      
       <div className="skills-bottom">
         {['C', 'HTML', 'CSS', 'Java', 'PostgreSQL', 'React', 'Tailwindcss', 'Linux', 'Javascript', 'GitHub', 'Git','Go'].map(skill => (
           <div className={`skills-items ${skill.toLowerCase()}`} key={skill}>
@@ -48,5 +46,4 @@ const Skills = () => (
     </div>
   </section>
 );
-
 export default Skills;
