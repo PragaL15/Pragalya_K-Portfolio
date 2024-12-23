@@ -10,11 +10,6 @@ const Contact = () => (
       <div>
         <h1 className="section-title">Contact <span>Info</span></h1>
       </div>
-      <div className="add info">
-<p>
-  qwertygfefbf
-</p>
-      </div>
       <div className="contact-items">
         {[
           { imgSrc: Phone, title: 'Phone', info: '+91 8179062993' },
@@ -35,5 +30,4 @@ const Contact = () => (
     </div>
   </section>
 );
-
 export default Contact;
