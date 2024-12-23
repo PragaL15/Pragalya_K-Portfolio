@@ -357,6 +357,31 @@ p{
     padding: 10px;
     width: 100vw;
 }
+#about .about h1 {
+    border-right: 4px solid crimson; 
+    white-space: nowrap;
+    overflow: hidden; 
+    display: inline-block;
+    width: 40%; 
+    animation: typing 3s steps(20, end), cursor 0.5s step-end infinite;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent; /* Makes cursor blink */
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start typing from 0 width */
+    }
+    to {
+        width: 100%; /* Expand to the full width of the text */
+    }
+}
+
+
 
 
 #about .col-left{
@@ -417,7 +442,23 @@ p{
     max-width: 1500px;
     margin: 0 auto;
     width: 98vw;
+    margin-top: 80px;
     padding-bottom: 90px;
+   
+  }
+  #skills .skills h1{
+    border-right: 4px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: typing 2s steps(6),
+    cursor .4s step-end infinite alternate;
+  }
+  @keyframes cursor{
+    50%{ border-color: transparent;}
+  }
+  @keyframes typing{
+    from { width:0}
   }
   
   #skills .skills-top {
@@ -431,8 +472,8 @@ p{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 70px;
     gap: 30px;
+    
   }
   
   #skills .skills-items {
@@ -443,7 +484,7 @@ p{
     flex-direction: column;
     height: 150px;
     width: 40px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     border-radius: 9%;
     overflow: hidden;
     padding: 85px;
@@ -578,15 +619,21 @@ p{
 #projects .projects{
     flex-direction: column;
     width: 100vw;
-    margin: 0 auto;
     padding-bottom: 80px;
+    margin-top: 70px;
 }
 
 
 #projects .projects-header h1{
     margin-bottom: 50px;
-}
+    border-right: 4px solid crimson; 
+    white-space: nowrap;
+    overflow: hidden; 
+    display: inline-block;
+    width: 100%; 
+    animation: typing 3s steps(18), cursor 4s step-end infinite;
 
+}
 
 #projects .all-projects{
     display: flex;
@@ -676,7 +723,6 @@ p{
 
 #contact .contact{
     flex-direction: column;
-    /* max-width: 1200px; */
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 20px;
