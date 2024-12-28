@@ -12,9 +12,12 @@
     "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^11.15.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.0.2"
+    "react-router-dom": "^7.0.2",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
