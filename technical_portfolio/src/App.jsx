@@ -45,7 +45,6 @@ const App = () => {
     <Router basename="/Pragalya_K-Portfolio">
       <Header />
       <Routes>
-        {/* Default redirection from "/" to "/home" */}
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Hero />} />
         <Route path="/about" element={<About />} />
