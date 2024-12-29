@@ -40,7 +40,6 @@ const App = () => {
       });
     };
   }, []);
-
   return (
     <Router basename="/Pragalya_K-Portfolio">
       <Header />
