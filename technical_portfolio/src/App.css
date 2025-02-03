@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;700&display=swap');
 
 
-*{
+* {
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+.white-icon {
+    width: 32px;
+    height: 32px;
+    filter: invert(17%) sepia(90%) saturate(6400%) hue-rotate(-8deg) brightness(80%) contrast(110%);
+ 
+  }
+  
 
 html{
     font-size: 10px;
@@ -124,7 +132,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(74, 74, 74);
+    background-color: black;
     width: 100%;
     height: 100%;
     max-width: 1300px;
@@ -134,13 +142,14 @@ p{
 
 #header .nav-bar .brand h1{
     font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 #header .nav-list ul{
     list-style: none;
     position: absolute;
-    background-color: rgb(31, 30, 30);
+    background-color: black;
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -362,8 +371,8 @@ p{
     white-space: nowrap;
     overflow: hidden; 
     display: inline-block;
-    width: 40%; 
-    animation: typing 3s steps(20, end), cursor 0.5s step-end infinite;
+    width: 45%; 
+    animation: typing 3s steps(22, end), cursor 0.5s step-end infinite;
 }
 
 @keyframes cursor {
@@ -741,7 +750,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #2f353b;
+    background-color: black;
     transition: 0.3s ease box-shadow;
 }
 
@@ -986,7 +995,7 @@ p{
     #contact .contact-item{
         margin: 10px;
         flex-direction: row;
-        background-color: #424343;
+        background-color: black;;
     }
 
     #contact .contact-item .icon{
