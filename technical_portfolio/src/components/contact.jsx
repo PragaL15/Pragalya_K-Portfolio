@@ -12,10 +12,9 @@ const Contact = () => (
       </div>
       <div className="contact-items">
         {[
-          { imgSrc: Phone, title: 'Phone', info: '+91 8179062993' },
-          { imgSrc: Email, title: 'Email', info: 'mvsaiprakash12345@gmail.com' },
-          { imgSrc: Address, title: 'Address', info: '2-120, Davajigudem, Gannavaram Mandal, Krishna District, Andhra Pradesh, 521101.' }
-        ].map((contact, index) => (
+          { imgSrc: Phone, title: 'Phone', info: '+91 8946072225' },
+          { imgSrc: Email, title: 'Email', info: 'pragalyakanakaraj@gmail.com' },
+            ].map((contact, index) => (
           <div className="contact-item" key={index}>
             <div className="contact-img">
               <img src={contact.imgSrc} alt={contact.title} style={{ width: '50px', height: '50px' }} />
