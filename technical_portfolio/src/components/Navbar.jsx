@@ -20,7 +20,6 @@ const Header = () => {
         <div className="nav-bar">
           <div className="brand">
             <Link to="/">
-              
             </Link>
           </div>
           <div className="nav-list">
