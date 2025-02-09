@@ -442,184 +442,145 @@ p{
 }
 
 /* End About Section */
-
-#skills .skills {
+#skills {
+    text-align: center;
+    padding: 150px 170px;
+    max-width: 1200px;
+    margin-left: 10px;
+    background-color: #121212; /* Dark background for contrast */
+}
+.skills {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    width: 98vw;
+    max-width: 1170px;
+    width: 80vw;
     margin-top: 80px;
+    
     padding-bottom: 90px;
-   
-  }
-  #skills .skills h1{
-    border-right: 4px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    animation: typing 2s steps(6),
-    cursor .4s step-end infinite alternate;
-  }
-  @keyframes cursor{
-    50%{ border-color: transparent;}
-  }
-  @keyframes typing{
-    from { width:0}
-  }
-  
-  #skills .skills-top {
-    max-width: 500px;
-    margin: 0 auto;
+}
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
     color: white;
-  }
-  
-  #skills .skills-bottom {
+    border-bottom: 3px solid #00d4ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Category Layout */
+.skills-grid {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    
-  }
-  
-  #skills .skills-items {
+}
+
+.skills-category {
+    flex: 1;
+    min-width: 250px;
+}
+
+.skills-category h2 {
+    font-size: 1.5rem;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+/* Skill Items */
+.skill-item {
     position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 150px;
-    width: 40px;
-    /* margin-bottom: 50px; */
-    border-radius: 9%;
-    overflow: hidden;
-    padding: 85px;
-    border: 5px solid transparent; 
-  }
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
-   #skills .skills-items::before {
+/* Circular Progress Effect */
+.skill-item::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: -4px;
     border-radius: 50%;
-    border: 8px solid transparent; 
+    background: conic-gradient(var(--progress-color, #fff) calc(var(--progress-value, 0%) * 3.6deg), transparent 0deg);
+    mask: radial-gradient(circle, transparent 52%, black 53%);
     z-index: -1;
-    animation: progressBar 5s linear infinite;
-  }
-  
-  @keyframes progressBar {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
 
+/* Progress Values */
+.skill-item.html::before { --progress-value: 80; --progress-color: #ff5722; }
+.skill-item.css::before { --progress-value: 70; --progress-color: #2196F3; }
+.skill-item.javascript::before { --progress-value: 60; --progress-color: #ffeb3b; }
+.skill-item.react::before { --progress-value: 75; --progress-color: #61DAFB; }
+.skill-item.tailwindcss::before { --progress-value: 65; --progress-color: #06B6D4; }
+.skill-item.java::before { --progress-value: 85; --progress-color: #42b883; }
+.skill-item.golang::before { --progress-value: 90; --progress-color: #8cc84b; }
+.skill-item.flask::before { --progress-value: 50; --progress-color: #000; }
 
-#skills .skills-items:hover {
+/* Hover Effects */
+.skill-item:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-#skills .skills-items.c:hover {
-    box-shadow: 3px 3px 5px 5px rgba(136, 132, 249, 0.5); /* Bottom and right shadow */
+/* Individual Skill Hover Effects */
+.skill-item.html:hover { box-shadow: 0 0 15px rgba(235, 57, 8, 0.5); }
+.skill-item.css:hover { box-shadow: 0 0 15px rgba(14, 234, 234, 0.5); }
+.skill-item.javascript:hover { box-shadow: 0 0 15px rgba(230, 223, 9, 0.5); }
+.skill-item.react:hover { box-shadow: 0 0 15px rgba(104, 149, 247, 0.5); }
+.skill-item.tailwindcss:hover { box-shadow: 0 0 15px rgba(67, 138, 53, 0.5); }
+.skill-item.java:hover { box-shadow: 0 0 15px rgba(230, 9, 131, 0.5); }
+.skill-item.postgresql:hover { box-shadow: 0 0 15px rgba(151, 151, 150, 0.5); }
+.skill-item.linux:hover { box-shadow: 0 0 15px rgba(137, 135, 74, 0.5); }
+.skill-item.github:hover { box-shadow: 0 0 15px rgba(142, 141, 138, 0.5); }
+.skill-item.git:hover { box-shadow: 0 0 15px rgba(234, 85, 85, 0.5); }
+.skill-item.go:hover { box-shadow: 0 0 15px rgba(82, 144, 155, 0.5); }
+
+/* Skill Text */
+.skill-item p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
 }
 
-#skills .skills-items.html:hover {
-    box-shadow: 3px 3px 7px 2px rgba(235, 57, 8, 0.5);
+/* Glowing Border Animation */
+@keyframes glowing-border {
+    0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+    50% { box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); }
+    100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
 }
 
-#skills .skills-items.css:hover {
-    box-shadow: 3px 3px 7px 2px rgba(14, 234, 234, 0.5);
+.skill-item:hover {
+    animation: glowing-border 1.5s infinite alternate;
 }
 
-#skills .skills-items.java:hover {
-    box-shadow: 3px 3px 7px 2px rgba(230, 9, 131, 0.5);
-}
-
-#skills .skills-items.postgresql:hover {
-    box-shadow: 3px 3px 7px 2px rgba(151, 151, 150, 0.5);
-}
-
-#skills .skills-items.react:hover {
-    box-shadow: 3px 3px 7px 2px rgba(104, 149, 247, 0.5);
-}
-
-#skills .skills-items.tailwindcss:hover {
-    box-shadow: 3px 3px 7px 2px rgba(67, 138, 53, 0.5);
-}
-
-#skills .skills-items.linux:hover {
-    box-shadow: 3px 3px 7px 2px rgba(137, 135, 74, 0.5);
-}
-
-#skills .skills-items.javascript:hover {
-    box-shadow: 3px 3px 7px 2px rgba(230, 223, 9, 0.5);
-}
-
-#skills .skills-items.github:hover {
-    box-shadow: 3px 3px 7px 2px rgba(142, 141, 138, 0.5);
-}
-
-#skills .skills-items.git:hover {
-    box-shadow: 3px 3px 7px 2px rgba(234, 85, 85, 0.5);
-}
-
-#skills .skills-items.go:hover {
-    box-shadow: 3px 3px 7px 2px rgba(82, 144, 155, 0.5);
-}
-
-
-  #skills .skills-bottom .icon {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 4px;
-    z-index: 1;
-  }
-  
-  /* Skill Title */
-  #skills .skills-items h1 {
-    font-size: 1.5rem;
-    color: #ddd;
-    margin-top: 10px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  /* Adjusting responsiveness */
-  @media (max-width: 768px) {
-    #skills .skills-items {
-      height: 150px;
-      width: 150px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
     }
-  
-    #skills .skills-bottom {
-      gap: 30px;
+
+    .skill-item {
+        width: 100px;
+        height: 100px;
     }
-  
-    #skills .skills-items h1 {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @property --angle {
-    syntax: "<angle>";
-    initial-value: 53deg;
-    inherits: false;
-    animation: glowing-border 5s linear infinite;
-  }
-  
-  @keyframes glowing-border {
-    from {
-      --angle: 53deg;
-    }
-  }
+}
+
   
 
 
@@ -1063,7 +1024,7 @@ p{
     }
 
     #skills .skills-top{
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     /* End Skills Section */
