@@ -47,19 +47,39 @@ const Skills = () => (
   <section id="skills">
     <div className="skills-container">
       <h1 className="section-title">Skills</h1>
-      
+
       <div className="skills-grid">
         {skillCategories.map((category) => (
           <div className="skills-category" key={category.title}>
             <h2>{category.title}</h2>
-            <div className="skills-list">
-              {category.skills.map(skill => (
-                <div className={`skill-item ${skill.toLowerCase()}`} key={skill}>
-                  <img src={skillIcons[skill]} alt={`${skill} Icon`} width="40" height="40" />
-                 
+            
+            {/* Special Case for Full Stack - Split into Two Rows */}
+            {category.title === "Full Stack Development" ? (
+              <div className="skills-list">
+                <div className="skills-row">
+                  {category.skills.slice(0, Math.ceil(category.skills.length / 2)).map(skill => (
+                    <div className={`skill-item ${skill.toLowerCase()}`} key={skill}>
+                      <img src={skillIcons[skill]} alt={`${skill} Icon`} className="skill-icon" />
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+                <div className="skills-row">
+                  {category.skills.slice(Math.ceil(category.skills.length / 2)).map(skill => (
+                    <div className={`skill-item ${skill.toLowerCase()}`} key={skill}>
+                      <img src={skillIcons[skill]} alt={`${skill} Icon`} className="skill-icon" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="skills-list">
+                {category.skills.map(skill => (
+                  <div className={`skill-item ${skill.toLowerCase()}`} key={skill}>
+                    <img src={skillIcons[skill]} alt={`${skill} Icon`} className="skill-icon" />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>

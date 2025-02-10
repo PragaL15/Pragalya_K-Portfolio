@@ -372,7 +372,7 @@ p{
     overflow: hidden; 
     display: inline-block;
     width: 45%; 
-    animation: typing 3s steps(22, end), cursor 0.5s step-end infinite;
+    animation: typing 3s steps(15, end), cursor 0.5s step-end infinite;
 }
 
 @keyframes cursor {
@@ -442,71 +442,118 @@ p{
 }
 
 /* End About Section */
+
+
+/* Skills Section */
 #skills {
     text-align: center;
-    padding: 150px 170px;
-    max-width: 1200px;
-    margin-left: 10px;
-    background-color: #121212; /* Dark background for contrast */
+    padding: 80px 40px;
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: #121212; 
 }
+
 .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     max-width: 1170px;
-    width: 80vw;
-    margin-top: 80px;
-    
+    width: 90%;
     padding-bottom: 90px;
 }
+
 .skills-container {
-    max-width: 1000px;
+    max-width: 1220px;
     margin: auto;
-    padding: 20px;
+    padding: 10px; 
 }
 
+/* Section Title with Typing Animation */
 .section-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    text-align: center;
     color: white;
-    border-bottom: 3px solid #00d4ff;
+    border-bottom: 1px solid #ffffff;
     display: inline-block;
     padding-bottom: 5px;
 }
 
-/* Category Layout */
+.section-title h1 {
+    font-size: 2rem;
+    display: inline-block; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 3px solid white;
+    animation: typing 2s steps(10, end) forwards, cursor 0.5s step-end infinite;
+}
+
+/* Keyframes for Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+/* Skills Grid Layout */
 .skills-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 35px;
 }
 
+/* Skills Category Layout */
 .skills-category {
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
 }
 
+/* Skill Category Titles */
 .skills-category h2 {
-    font-size: 1.5rem;
+    font-size: 18px;
     color: #00d4ff;
-    margin-bottom: 15px;
 }
 
-/* Skill Items */
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-direction: column; /* Ensures stacked rows */
+    align-items: center;
+    gap: 15px;
+}
+
+/* Two Row Layout for Full Stack Development */
+.skills-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+
+/* Skill Item */
 .skill-item {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 120px;
-    width: 120px;
+    height: 135px;
+    width: 135px;
+    margin-top: 20px;
     border-radius: 50%;
     background: #111;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Skill Item Image */
+.skill-item img {
+    width: 60px;  
+    height: 60px; 
 }
 
 /* Circular Progress Effect */
@@ -520,23 +567,35 @@ p{
     z-index: -1;
 }
 
-/* Progress Values */
-.skill-item.html::before { --progress-value: 80; --progress-color: #ff5722; }
-.skill-item.css::before { --progress-value: 70; --progress-color: #2196F3; }
-.skill-item.javascript::before { --progress-value: 60; --progress-color: #ffeb3b; }
-.skill-item.react::before { --progress-value: 75; --progress-color: #61DAFB; }
-.skill-item.tailwindcss::before { --progress-value: 65; --progress-color: #06B6D4; }
-.skill-item.java::before { --progress-value: 85; --progress-color: #42b883; }
-.skill-item.golang::before { --progress-value: 90; --progress-color: #8cc84b; }
-.skill-item.flask::before { --progress-value: 50; --progress-color: #000; }
-
 /* Hover Effects */
 .skill-item:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation: glowing-border 1.5s infinite alternate;
 }
 
-/* Individual Skill Hover Effects */
+/* Glowing Border Animation */
+@keyframes glowing-border {
+    0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+    50% { box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); }
+    100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+}
+
+/* Different Skill Progress Colors */
+.skill-item.html::before { --progress-value: 80; --progress-color: #ff5722; }
+.skill-item.css::before { --progress-value: 70; --progress-color: #2196F3; }
+.skill-item.javascript::before { --progress-value: 60; --progress-color: #d2c233; }
+.skill-item.react::before { --progress-value: 75; --progress-color: #61DAFB; }
+.skill-item.tailwindcss::before { --progress-value: 65; --progress-color: #009ab5; }
+.skill-item.java::before { --progress-value: 85; --progress-color: #b41d1d; }
+.skill-item.go::before { --progress-value: 90; --progress-color: #5bd2dd; }
+.skill-item.c::before { --progress-value: 50; --progress-color: #ffffff; }
+.skill-item.linux::before { --progress-value: 50; --progress-color: #f7b147; }
+.skill-item.github::before { --progress-value: 50; --progress-color: #8e8e8e; }
+.skill-item.git::before { --progress-value: 50; --progress-color: #ea2a08; }
+.skill-item.postgresql::before { --progress-value: 50; --progress-color: #3a5a9d; }
+
+/* Hover Effects for Different Skills */
 .skill-item.html:hover { box-shadow: 0 0 15px rgba(235, 57, 8, 0.5); }
 .skill-item.css:hover { box-shadow: 0 0 15px rgba(14, 234, 234, 0.5); }
 .skill-item.javascript:hover { box-shadow: 0 0 15px rgba(230, 223, 9, 0.5); }
@@ -549,7 +608,6 @@ p{
 .skill-item.git:hover { box-shadow: 0 0 15px rgba(234, 85, 85, 0.5); }
 .skill-item.go:hover { box-shadow: 0 0 15px rgba(82, 144, 155, 0.5); }
 
-/* Skill Text */
 .skill-item p {
     margin-top: 5px;
     font-size: 1rem;
@@ -557,20 +615,13 @@ p{
     font-weight: bold;
 }
 
-/* Glowing Border Animation */
-@keyframes glowing-border {
-    0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
-    50% { box-shadow: 0 0 25px rgba(255, 255, 255, 0.3); }
-    100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
-}
-
-.skill-item:hover {
-    animation: glowing-border 1.5s infinite alternate;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-row {
         flex-direction: column;
         align-items: center;
     }
@@ -579,12 +630,12 @@ p{
         width: 100px;
         height: 100px;
     }
+
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
 }
-
-  
-
-
-/* Projects Section */
 
 #projects .projects{
     flex-direction: column;
@@ -592,7 +643,6 @@ p{
     padding-bottom: 80px;
     margin-top: 70px;
 }
-
 
 #projects .projects-header h1{
     margin-bottom: 50px;
@@ -611,7 +661,6 @@ p{
     justify-content: center;
     flex-direction: column;
 }
-
 
 #projects .project-item{
     display: flex;
@@ -937,7 +986,7 @@ p{
     #contact .contact{
         flex-direction: column;
         padding: 50px 0;
-        margin-top:40px ;
+        margin-top:110px ;
         align-items: center;
         justify-content: center;
         min-height: 30vh;
@@ -950,6 +999,7 @@ p{
         flex-direction: row;
         padding: 20px;
         margin: 0;
+        margin-top: 30px;
       
     }
 

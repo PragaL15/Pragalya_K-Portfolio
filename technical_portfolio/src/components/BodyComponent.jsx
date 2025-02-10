@@ -15,9 +15,9 @@ const Hero = () => (
           Pragalya Kanakaraj <span></span>
         </h1>
         <a
-          href="/Resume.pdf"
+          href="/Pragalya_K-Portfolio/PRAGALYA_KANAKARAJ_Resume.pdf"
           className="cta inline-block px-4 py-2 mt-4 text-lg font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600"
-          download
+          download="PRAGALYA_KANAKARAJ_Resume.pdf"
         >
           Resume
         </a>

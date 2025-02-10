@@ -19,7 +19,7 @@ const Footer = () => (
           </div>
         ))}
       </div>
-      <p>Copyright Ⓒ 2020 Pragalya Kanakaraj. All Rights Reserved.</p>
+      <p>Copyright Ⓒ 2025 Pragalya Kanakaraj. All Rights Reserved.</p>
     </div>
   </section>
 );
