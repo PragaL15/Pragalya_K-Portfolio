@@ -583,17 +583,17 @@ p{
 
 /* Different Skill Progress Colors */
 .skill-item.html::before { --progress-value: 80; --progress-color: #ff5722; }
-.skill-item.css::before { --progress-value: 70; --progress-color: #2196F3; }
+.skill-item.css::before { --progress-value: 75; --progress-color: #2196F3; }
 .skill-item.javascript::before { --progress-value: 60; --progress-color: #d2c233; }
-.skill-item.react::before { --progress-value: 75; --progress-color: #61DAFB; }
-.skill-item.tailwindcss::before { --progress-value: 65; --progress-color: #009ab5; }
-.skill-item.java::before { --progress-value: 85; --progress-color: #b41d1d; }
-.skill-item.go::before { --progress-value: 90; --progress-color: #5bd2dd; }
+.skill-item.react::before { --progress-value: 60; --progress-color: #61DAFB; }
+.skill-item.tailwindcss::before { --progress-value: 75; --progress-color: #009ab5; }
+.skill-item.java::before { --progress-value: 75; --progress-color: #b41d1d; }
+.skill-item.go::before { --progress-value: 70; --progress-color: #5bd2dd; }
 .skill-item.c::before { --progress-value: 50; --progress-color: #ffffff; }
-.skill-item.linux::before { --progress-value: 50; --progress-color: #f7b147; }
-.skill-item.github::before { --progress-value: 50; --progress-color: #8e8e8e; }
+.skill-item.linux::before { --progress-value: 30; --progress-color: #f7b147; }
+.skill-item.github::before { --progress-value: 70; --progress-color: #8e8e8e; }
 .skill-item.git::before { --progress-value: 50; --progress-color: #ea2a08; }
-.skill-item.postgresql::before { --progress-value: 50; --progress-color: #3a5a9d; }
+.skill-item.postgresql::before { --progress-value: 70; --progress-color: #3a5a9d; }
 
 /* Hover Effects for Different Skills */
 .skill-item.html:hover { box-shadow: 0 0 15px rgba(235, 57, 8, 0.5); }
