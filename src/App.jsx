@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Header from "./components/Navbar";
 import Hero from "./components/BodyComponent";
 import About from "./components/About";
@@ -40,19 +39,19 @@ const App = () => {
       });
     };
   }, []);
+
   return (
-    <Router>
+    <>
       <Header />
-      <Routes>
-        {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
-        <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main>
+        <section id="home"><Hero /></section>
+        <section id="about"><About /></section>
+        <section id="skills"><Skills /></section>
+        <section id="projects"><Projects /></section>
+        <section id="contact"><Contact /></section>
+      </main>
       <Footer />
-    </Router>
+    </>
   );
 };
 

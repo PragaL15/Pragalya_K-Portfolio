@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "../App.css";
 import contactIcon from "../assets/icons/contact.svg";
 import projectIcon from "../assets/icons/project.svg";
@@ -19,38 +18,37 @@ const Header = () => {
       <div className="header container">
         <div className="nav-bar">
           <div className="brand">
-            <Link to="/">
-            </Link>
+            <a href="#home">My Portfolio</a>
           </div>
-          <div className="nav-list">
-          <div className="hamburger">
-            <div className="bar"></div>
+          <div className={`nav-list ${isMenuOpen ? "open" : ""}`}>
+            <div className="hamburger" onClick={toggleMenu}>
+              <div className="bar"></div>
             </div>
             <ul>
               <li>
-                <Link to="/" data-after="Home">
+                <a href="#home" data-after="Home" onClick={toggleMenu}>
                   <img src={homeIcon} alt="Home Icon" className="icon white-icon" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/about" data-after="About">
+                <a href="#about" data-after="About" onClick={toggleMenu}>
                   <img src={aboutIcon} alt="About Icon" className="icon white-icon" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/skills" data-after="Skills">
+                <a href="#skills" data-after="Skills" onClick={toggleMenu}>
                   <img src={skillIcon} alt="Skill Icon" className="icon white-icon" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/projects" data-after="Projects">
+                <a href="#projects" data-after="Projects" onClick={toggleMenu}>
                   <img src={projectIcon} alt="Project Icon" className="icon white-icon" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" data-after="Contact">
+                <a href="#contact" data-after="Contact" onClick={toggleMenu}>
                   <img src={contactIcon} alt="Contact Icon" className="icon white-icon" />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

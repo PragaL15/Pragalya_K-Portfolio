@@ -447,10 +447,14 @@ p{
 /* Skills Section */
 #skills {
     text-align: center;
-    padding: 80px 40px;
+    /* padding: 80px 40px; */
     max-width: 1250px;
     margin: 0 auto;
     background-color: #121212; 
+}
+#home{
+    font-size: 20px;
+    color: crimson;
 }
 
 .skills {
@@ -743,9 +747,10 @@ p{
 #contact .contact{
     flex-direction: column;
     margin: 0 auto;
-    margin-bottom: 50px;
+  
     margin-top: 20px;
     width: 98vw;
+    background-color: #000;
 }
 
 #contact .contact-item{
