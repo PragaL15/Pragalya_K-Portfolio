@@ -9,5 +9,4 @@ export default defineConfig({
       exportAsDefault: true, // Ensures correct export format
     }), 
   ],
-  base: '/Pragalya_K-Portfolio/', 
 });

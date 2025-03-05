@@ -41,7 +41,7 @@ const App = () => {
     };
   }, []);
   return (
-    <Router basename="/Pragalya_K-Portfolio">
+    <Router>
       <Header />
       <Routes>
         {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
