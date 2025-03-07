@@ -12,7 +12,7 @@ const Hero = () => (
           My Name is <span></span>
         </h1>
         <h1 className="text-4xl font-bold">
-          Pragalya Kanakaraj <span></span>
+          Pragalya Kanakaraj<span></span>
         </h1>
         <a
           href="/Pragalya_K-Portfolio/PRAGALYA_KANAKARAJ_Resume.pdf"
