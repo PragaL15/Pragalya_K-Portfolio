@@ -31,7 +31,6 @@ portfolio/
 │── vite.config.js  
 │── README.md  
 ```
-
 ## 🚀 Installation & Setup  
 1. **Clone the repository:**  
    ```sh
