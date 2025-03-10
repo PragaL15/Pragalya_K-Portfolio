@@ -15,7 +15,6 @@ This is a personal portfolio website built using **React.js** and **CSS**, power
 ## 🛠 Technologies Used  
 - **Frontend:** React.js (Vite), HTML, CSS  
 - **Styling:** CSS, Flexbox, Grid  
-- **Deployment:** Vercel / Netlify / GitHub Pages  
 
 ## 📂 Project Structure  
 ```
