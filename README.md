@@ -1,57 +1,59 @@
-# Portfolio README
 
-## 🚀 Portfolio Overview
-This is a personal portfolio website built using **React.js** and **CSS**. It showcases my skills, projects, and experiences in a visually appealing and interactive manner.
+# 🚀 Pragalya's Portfolio  
 
-## 📌 Features
-- Responsive design for mobile and desktop
-- Interactive UI with animations
-- Project showcase with descriptions and links
-- Contact form for inquiries
-- Social media links
+## 📖 Overview  
+This is a personal portfolio website built using **React.js** and **CSS**, powered by **Vite** for a fast and optimized development experience. The portfolio showcases my **skills, projects, and experiences** in an interactive and visually appealing manner.  
 
-## 🛠️ Technologies Used
-- **Frontend:** React.js, HTML, CSS
-- **Styling:** CSS, Flexbox, Grid
-- **Deployment:** Vercel / Netlify / GitHub Pages
+## ✨ Features  
+- ⚡ **Blazing fast** development with Vite  
+- 📱 **Fully responsive** design for all devices  
+- 🎨 **Smooth animations** and interactive UI  
+- 🛠 **Project showcase** with descriptions & links  
+- 📧 **Contact form** for inquiries  
+- 🔗 **Social media links** for networking  
 
-## 📂 Project Structure
+## 🛠 Technologies Used  
+- **Frontend:** React.js (Vite), HTML, CSS  
+- **Styling:** CSS, Flexbox, Grid  
+- **Deployment:** Vercel / Netlify / GitHub Pages  
+
+## 📂 Project Structure  
 ```
 portfolio/
-│── public/
-│── src/
-│   │── components/    # Reusable components
-│   │── pages/         # Main pages
-│   │── assets/        # Images & icons
-│   │── App.js         # Root component
-│   │── index.js       # Entry point
-│── .gitignore
-│── package.json
-│── README.md
+│── public/            # Static assets  
+│── src/  
+│   │── components/    # Reusable UI components  
+│   │── pages/         # Main pages  
+│   │── assets/        # Images, icons, fonts  
+│   │── App.jsx        # Root component  
+│   │── main.jsx       # Entry point  
+│── .gitignore  
+│── package.json  
+│── vite.config.js  
+│── README.md  
 ```
 
-## 🔧 Installation & Setup
-1. Clone the repository:
+## 🚀 Installation & Setup  
+1. **Clone the repository:**  
    ```sh
    git clone https://github.com/yourusername/portfolio.git
    ```
-2. Install dependencies:
+2. **Install dependencies:**  
    ```sh
    npm install
    ```
-3. Start the development server:
+3. **Run the development server:**  
    ```sh
-   npm start
+   npm run dev
    ```
-4. Open the browser and go to:
+4. **Open in browser:**  
    ```
    http://localhost:5173
    ```
-
-## 👨‍💻 Contributing
-If you want to contribute, feel free to submit a pull request or open an issue.
-
-
+## Live website
+```
+https://pragalya-portfolio.vercel.app/
+```
+## 🎯 Contributing  
+Feel free to **fork this repository**, make improvements, and submit a **pull request**!  
 ---
-
-
